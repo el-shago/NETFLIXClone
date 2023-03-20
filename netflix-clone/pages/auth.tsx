@@ -1,4 +1,4 @@
-import input from "@/components/input";
+import Input from "@/components/input";
 
 const auth = () =>{
     return(
@@ -13,7 +13,7 @@ const auth = () =>{
                             Sign in
                         </h2>
                         <div className="flex flex-col gap-4">
-                            <input/>
+                            <Input/>
                         </div>
                     </div>
                 </div>

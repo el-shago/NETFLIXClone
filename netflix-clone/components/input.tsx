@@ -1,8 +1,8 @@
-const input = () => {
+const Input = () => {
     return(
         <div className="relative">
             <input
-                id="email"
+                    id="email"
                     className="
                         block
                         rounded-md
@@ -36,7 +36,7 @@ const input = () => {
                     peer-placeholder-shown:scale-100
                     peer-placeholder-shown:translate-y-0
                     peer-focus:scale-75
-                    peer-focus:translate-y-3
+                    peer-focus:-translate-y-3
                 "
                 htmlFor="email">
                     Email
@@ -47,4 +47,4 @@ const input = () => {
     )
 }
 
-export default input;
+export default Input;
