@@ -1,3 +1,8 @@
+import NavbarItem from './NavbarItem';
+
+import { BsChevronDown } from 'react-icons/bs';
+import MobileMenu from './MobileMenu';
+
 const Navbar = () =>{
     return(
         <nav className="w-full fixed z-40">
@@ -25,9 +30,18 @@ const Navbar = () =>{
                         lg:visible
                     "
                 >
-                    <NavbarItem/>
+                    <NavbarItem label='Home'/>
+                    <NavbarItem label='Series'/>
+                    <NavbarItem label='Films'/>
+                    <NavbarItem label='New & Popular'/>
+                    <NavbarItem label='My List'/>
+                    <NavbarItem label='Browse by languages'/>
                 </div>
-
+                <div className='lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative'>
+                    <p className='text-white text-sm'>Browse</p>
+                    <BsChevronDown className="text-white transition" />
+                    <MobileMenu />
+                </div>
             </div>
         </nav>
     )
