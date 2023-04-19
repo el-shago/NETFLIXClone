@@ -27,7 +27,7 @@ const Navbar = () =>{
                         ml-8
                         gap-7
                         hidden
-                        lg:visible
+                        lg:flex
                     "
                 >
                     <NavbarItem label='Home'/>
